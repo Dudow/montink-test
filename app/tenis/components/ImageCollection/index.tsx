@@ -16,7 +16,7 @@ export const ImageCollection = ({ images }: ImageCollectionProps) => {
           alt="Imagem principal"
           fill
           className="object-cover rounded-xl"
-          sizes="(max-width: 768px) 100vw, 50vw"
+          unoptimized
         />
       </div>
       <div className="flex gap-4 mt-4">
