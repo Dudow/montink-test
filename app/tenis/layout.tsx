@@ -9,8 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Nike Air Max SC',
     description: 'Descubra o conforto e o estilo do Nike Air Max SC.',
-    // TODO: SET CORRECT URL
-    url: 'http://localhost:3000/tenis',
+    url: 'https://montink-test-mcnoj2osm-eduardo-nunes-s-projects.vercel.app/tenis',
     siteName: 'Nike Clone',
     images: [
       {
