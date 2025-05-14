@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import { useImageCollection } from './use';
+import Image from 'next/image';
 
 export type ImageCollectionProps = {
   images: string[];
@@ -10,11 +10,15 @@ export const ImageCollection = ({ images }: ImageCollectionProps) => {
 
   return (
     <div className="w-full md:w-1/2">
-      <img
-        src={selected}
-        alt="Imagem principal"
-        className="w-full rounded-xl border shadow object-cover"
-      />
+      <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow">
+        <Image
+          src={selected}
+          alt="Imagem principal"
+          fill
+          className="object-cover rounded-xl"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+      </div>
       <div className="flex gap-4 mt-4">
         {images.map((image, index) => (
           <img
