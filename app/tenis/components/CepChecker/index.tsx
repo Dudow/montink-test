@@ -1,6 +1,6 @@
 import { useCepChecker } from './use';
 
-export function CepChecker() {
+export const CepChecker = () => {
   const { address, cep, error, handleCepSearch, handleChange } =
     useCepChecker();
 
@@ -32,4 +32,4 @@ export function CepChecker() {
       )}
     </div>
   );
-}
+};
