@@ -43,6 +43,4 @@ export const product: Product = {
       ],
     },
   ],
-  description:
-    'Com suas linhas fáceis, o visual das pistas de herança e, claro, amortecimento Air visível, o Nike Air Max SC é a finalização perfeita para qualquer look. A rica mistura de materiais confere profundida, enquanto o transforma em um tênis durável e leve para uso no dia a dia.',
 };
