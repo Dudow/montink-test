@@ -20,7 +20,7 @@ export const VariantsSelector = (props: VariantsSelectorProps) => {
             <button
               key={color.hex}
               onClick={() => onColorChange(color.hex)}
-              className={`w-18 h-18 rounded-md border-2 overflow-hidden transition-all ${
+              className={`w-18 h-18 rounded-md border-2 overflow-hidden cursor-pointer transition-all ${
                 selectedColor === color.hex
                   ? 'border-black'
                   : 'border-transparent'
