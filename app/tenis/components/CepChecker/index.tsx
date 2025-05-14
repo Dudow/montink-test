@@ -6,7 +6,7 @@ export const CepChecker = () => {
 
   return (
     <div className="mb-6">
-      <h2 className="font-semibold mb-1">Calcular frete e entrega</h2>
+      <h2 className="font-bold text-lg mb-1">Calcular frete e entrega</h2>
       <div className="flex">
         <input
           type="text"
@@ -25,10 +25,18 @@ export const CepChecker = () => {
 
       {error && <p className="text-sm text-red-600 mt-1">{error}</p>}
 
-      {address && (
+      {address ? (
         <p className="text-sm text-gray-700 mt-1">
           Endereço de Entrega: <strong>{address}</strong>
         </p>
+      ) : (
+        <a
+          href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+          className="text-sm text-gray-700 mt-1 underline cursor-pointer"
+          target="_blank"
+        >
+          Não sei meu CEP
+        </a>
       )}
     </div>
   );
