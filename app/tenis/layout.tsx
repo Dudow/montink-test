@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
-export default function RootLayout({
+export default function PageLayout({
   children,
 }: {
   children: React.ReactNode;
