@@ -2,7 +2,13 @@ import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['imgnike-a.akamaihd.net'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'imgnike-a.akamaihd.net',
+        port: '',
+      },
+    ],
   },
 };
 
