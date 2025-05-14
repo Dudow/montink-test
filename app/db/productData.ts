@@ -1,4 +1,4 @@
-import { Product } from '../common/interfaces/product';
+import { Product } from '../interfaces/product';
 
 export const product: Product = {
   id: '9abe063f-3970-4292-bede-ad6b0a79185e',
