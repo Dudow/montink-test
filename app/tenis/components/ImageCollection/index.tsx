@@ -9,7 +9,7 @@ export const ImageCollection = ({ images }: ImageCollectionProps) => {
   const { selected, setSelected } = useImageCollection({ images });
 
   return (
-    <div>
+    <div className="w-full md:w-1/2">
       <img
         src={selected}
         alt="Imagem principal"
