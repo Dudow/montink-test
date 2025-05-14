@@ -12,7 +12,7 @@ Todo
 - [x] Seleção dinâmica de variantes (cor e tamanho)
 - [x] Verificação de CEP com integração à API [ViaCEP](https://viacep.com.br/)
 - [x] Interface responsiva e inspirada na Nike
-- [ ] Persistência temporária (15 minutos) de seleções e dados buscados
+- [x] Persistência temporária (15 minutos) de seleções
 
 ## Explicação das escolhas
 
