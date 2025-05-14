@@ -1,10 +1,26 @@
 ## Como rodar localmente
 
-Todo
+```console
+git clone https://github.com/Dudow/montink-test.git
+```
+
+```console
+cd montink-test
+```
+
+```console
+npm install
+```
+
+```console
+npm run dev
+```
 
 ## Deploy
 
-Todo
+Projeto publicado via [Vercel](https://vercel.com/)
+
+- [Acesse aqui](https://montink-test.vercel.app/tenis)
 
 ## Funcionalidades
 
