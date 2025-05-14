@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Como rodar localmente
 
-## Getting Started
+Todo
 
-First, run the development server:
+## Deploy
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Todo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] Visualização de imagem principal com miniaturas clicáveis
+- [ ] Seleção dinâmica de variantes (cor e tamanho)
+- [ ] Verificação de CEP com integração à API [ViaCEP](https://viacep.com.br/)
+- [ ] Interface responsiva e inspirada na Nike
+- [ ] Persistência temporária (15 minutos) de seleções e dados buscados
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Explicação das escolhas
 
-## Learn More
+- Eu faria a persistência das opções selecionadas por query params, para que assim, quando fosse compartilhada, mantivesse a mesma seleção. Porém, a descrição é clara sobre a persistência temporária.
 
-To learn more about Next.js, take a look at the following resources:
+- Para fins de simplicidade, o projeto foi desenvolvido em uma única branch (`main`). Em um ambiente profissional, utilizaria uma estrutura com `develop` e branches de funcionalidades (`feature/*`) para melhor organização e controle de versão.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Produto utilizado
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O produto é real e pode ser encontrado em: [Tênis Nike Air Max SC Masculino](https://www.nike.com.br/tenis-nike-air-max-sc-masculino-011224.html?cor=16)
