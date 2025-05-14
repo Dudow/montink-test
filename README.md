@@ -8,10 +8,10 @@ Todo
 
 ## Funcionalidades
 
-- [ ] Visualização de imagem principal com miniaturas clicáveis
-- [ ] Seleção dinâmica de variantes (cor e tamanho)
-- [ ] Verificação de CEP com integração à API [ViaCEP](https://viacep.com.br/)
-- [ ] Interface responsiva e inspirada na Nike
+- [x] Visualização de imagem principal com miniaturas clicáveis
+- [x] Seleção dinâmica de variantes (cor e tamanho)
+- [x] Verificação de CEP com integração à API [ViaCEP](https://viacep.com.br/)
+- [x] Interface responsiva e inspirada na Nike
 - [ ] Persistência temporária (15 minutos) de seleções e dados buscados
 
 ## Explicação das escolhas
