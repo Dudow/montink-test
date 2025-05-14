@@ -15,12 +15,12 @@ export const VariantsSelector = (props: VariantsSelectorProps) => {
   return (
     <div className="space-y-6">
       <div>
-        <div className="flex gap-3">
+        <div className="grid gap-2 grid-cols-5">
           {colors.map((color) => (
             <button
               key={color.hex}
               onClick={() => onColorChange(color.hex)}
-              className={`w-20 h-20 rounded-md border-2 overflow-hidden transition-all ${
+              className={`w-18 h-18 rounded-md border-2 overflow-hidden transition-all ${
                 selectedColor === color.hex
                   ? 'border-black'
                   : 'border-transparent'
