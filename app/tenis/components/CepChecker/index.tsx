@@ -23,21 +23,23 @@ export const CepChecker = () => {
         </button>
       </div>
 
-      {error && <p className="text-sm text-red-600 mt-1">{error}</p>}
+      <div className={`mt-2 ${error || address ? 'pb-0' : 'pb-5'}`}>
+        {error && <p className="text-sm text-red-600 mt-1">{error}</p>}
 
-      {address ? (
-        <p className="text-sm text-gray-700 mt-1">
-          Endereço de Entrega: <strong>{address}</strong>
-        </p>
-      ) : (
-        <a
-          href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-          className="text-sm text-gray-700 mt-1 underline cursor-pointer"
-          target="_blank"
-        >
-          Não sei meu CEP
-        </a>
-      )}
+        {address ? (
+          <p className="text-sm text-gray-700 mt-1">
+            Endereço de Entrega: <strong>{address}</strong>
+          </p>
+        ) : (
+          <a
+            href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+            className="text-sm text-gray-700 mt-1 underline cursor-pointer"
+            target="_blank"
+          >
+            Não sei meu CEP
+          </a>
+        )}
+      </div>
     </div>
   );
 };
