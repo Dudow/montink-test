@@ -1,11 +1,17 @@
+import { variantProduct } from '@/app/interfaces/product';
 import formatPrice from '@/app/utils/formatPrice';
 
 type ProductInfoProps = {
-  title: string;
-  price: string;
+  title?: string;
+  price?: string;
+  product: variantProduct;
 };
 
-export const ProductInfo = ({ price, title }: ProductInfoProps) => {
+export const ProductInfo = ({
+  price = '',
+  title = '',
+  product,
+}: ProductInfoProps) => {
   return (
     <div className="space-y-4 mb-4">
       <div>
@@ -23,11 +29,17 @@ export const ProductInfo = ({ price, title }: ProductInfoProps) => {
           juros
         </p>
       </div>
-
-      <p className="text-green-800">
-        <b>Baixe o Nike App</b> e ganhe <b>5% de desconto</b> com o cupom{' '}
-        <b>PRIMEIRACOMPRA</b>, na primeira compra feita no app
-      </p>
+      {product && (
+        <p
+          className={
+            product.inventory_quantity > 0 ? 'text-green-800' : 'text-red-800'
+          }
+        >
+          {product.inventory_quantity > 0
+            ? `Produtos em estoque: ${product.inventory_quantity}`
+            : 'Produto indisponível'}
+        </p>
+      )}
     </div>
   );
 };
