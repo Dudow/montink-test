@@ -1,6 +1,6 @@
 export interface Product {
   currency: string;
-  id: number;
+  id: string;
   image_url: string;
   images: {
     id: number;
@@ -8,13 +8,7 @@ export interface Product {
   }[];
   options: string[];
   values: string[][];
-  variants: {
-    id: number;
-    image_url: string;
-    inventory_quantity: number;
-    price: string;
-    values: unknown[];
-  }[];
+  variants: variantProduct[];
   title: string;
 }
 
